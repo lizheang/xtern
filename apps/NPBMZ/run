@@ -1,0 +1,7 @@
+export OMP_NUM_THREADS=4
+mpirun -np 1 bt-mz.A.1
+mpirun -np 2 bt-mz.A.2
+mpirun -np 4 bt-mz.A.4
+mpirun -np 8 bt-mz.A.8
+mpirun -np 16 bt-mz.A.16
+
