@@ -1,0 +1,19 @@
+
+ARCH=`uname -m`
+
+
+pushd NPB3.3.1/NPB3.3-OMP
+if [ "$ARCH" == "x86_64" ]; then
+  ln -s $XTERN_ROOT/apps/openmp/install/lib64/libgomp.a
+  ln -s $XTERN_ROOT/apps/openmp/install/lib64/libstdc++.a
+else
+  ln -s $XTERN_ROOT/apps/openmp/install/lib/libgomp.a
+  ln -s $XTERN_ROOT/apps/openmp/install/lib/libstdc++.a
+fi
+popd
+
+
+
+
+
+
